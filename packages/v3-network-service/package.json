@@ -1,0 +1,21 @@
+{
+  "name": "@glance/v3-network-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "node src/cli.mjs",
+    "test": "node --test test/*.test.mjs",
+    "type-check": "node --check src/server.mjs && node --check src/cli.mjs",
+    "build": "node --check src/server.mjs && node --check src/cli.mjs"
+  },
+  "engines": {
+    "node": "24.14.1",
+    "npm": "11.x"
+  },
+  "dependencies": {
+    "ipaddr.js": "2.5.0",
+    "pg": "8.23.1"
+  }
+}

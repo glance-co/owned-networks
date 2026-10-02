@@ -1,0 +1,10 @@
+{
+  "name": "@glance/v3-network-client",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": { ".": { "types": "./src/index.d.mts", "import": "./src/index.mjs" }, "./device-profile": { "types": "./src/device-profile.d.mts", "import": "./src/device-profile.mjs" } },
+  "scripts": { "test": "node --test ../v3-network-protocol/test/browser-client.test.mjs", "type-check": "node --check src/index.mjs && node --check src/device-profile.mjs", "build": "node --check src/index.mjs && node --check src/device-profile.mjs" },
+  "engines": { "node": "24.14.1", "npm": "11.x" }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "glance-owned-network-reference",
+  "version": "0.1.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "engines": {
+    "node": "24.14.1",
+    "npm": "11.x"
+  },
+  "workspaces": [
+    "packages/v3-network-protocol",
+    "packages/v3-network-service",
+    "packages/v3-network-client"
+  ],
+  "scripts": {
+    "test": "npm test --workspace=@glance/v3-network-protocol && npm test --workspace=@glance/v3-network-service",
+    "start": "node packages/v3-network-service/src/cli.mjs"
+  }
+}

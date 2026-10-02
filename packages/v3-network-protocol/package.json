@@ -1,0 +1,10 @@
+{
+  "name": "@glance/v3-network-protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "Apache-2.0",
+  "exports": "./src/index.mjs",
+  "scripts": { "test": "node --test test/*.test.mjs", "type-check": "node --check src/index.mjs", "build": "node --check src/index.mjs" },
+  "engines": { "node": "24.14.1", "npm": "11.x" }
+}
